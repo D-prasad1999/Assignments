@@ -1,0 +1,41 @@
+2024-04-15 10:38:34,677 INFO  StartupInfoLogger:55 - [] Starting EmployeeBatchServiceCsvtodbApplication using Java 17.0.4.1 on LIN65001560 with PID 18872 (C:\Users\CHOPRASA\Documents\Assignments\employee-batch-service-csvtodb\target\classes started by choprasa in C:\Users\CHOPRASA\Documents\Assignments\employee-batch-service-csvtodb)
+2024-04-15 10:38:34,687 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2024-04-15 10:38:36,584 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-15 10:38:36,732 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interfaces.
+2024-04-15 10:38:38,115 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8080 (http)
+2024-04-15 10:38:38,146 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2024-04-15 10:38:38,148 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.70]
+2024-04-15 10:38:38,540 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2024-04-15 10:38:38,541 INFO  ServletWebServerApplicationContext:292 - [] Root WebApplicationContext: initialization completed in 3691 ms
+2024-04-15 10:38:38,816 INFO  HikariDataSource:110 - [] HikariPool-1 - Starting...
+2024-04-15 10:38:39,710 INFO  HikariDataSource:123 - [] HikariPool-1 - Start completed.
+2024-04-15 10:38:40,244 INFO  LogHelper:31 - [] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-15 10:38:40,443 INFO  Version:44 - [] HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-04-15 10:38:40,992 INFO  JavaReflectionManager:56 - [] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-15 10:38:41,387 INFO  Dialect:175 - [] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-15 10:38:43,360 INFO  JtaPlatformInitiator:52 - [] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-15 10:38:43,395 INFO  AbstractEntityManagerFactoryBean:437 - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-15 10:38:44,343 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - [] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-15 10:38:45,023 WARN  JpaBatchConfigurer:63 - [] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2024-04-15 10:38:45,044 INFO  JobRepositoryFactoryBean:185 - [] No database type set, using meta data indicating: MYSQL
+2024-04-15 10:38:45,102 INFO  SimpleJobLauncher:215 - [] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-04-15 10:38:45,374 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-15 10:38:45,399 INFO  StartupInfoLogger:61 - [] Started EmployeeBatchServiceCsvtodbApplication in 11.951 seconds (JVM running for 14.588)
+2024-04-15 10:39:06,727 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-15 10:39:06,729 INFO  FrameworkServlet:525 - [] Initializing Servlet 'dispatcherServlet'
+2024-04-15 10:39:06,733 INFO  FrameworkServlet:547 - [] Completed initialization in 3 ms
+2024-04-15 10:39:06,890 INFO  EmployeeController:28 - [] Data import job has been triggered.
+2024-04-15 10:39:07,078 INFO  SimpleJobLauncher$1:146 - [] Job: [FlowJob: [name=import-employees]] launched with the following parameters: [{startAt=1713157746892}]
+2024-04-15 10:39:07,218 INFO  SimpleStepHandler:149 - [] Executing step: [step1]
+2024-04-15 10:39:07,330 INFO  EmployeeProcessor:16 - [] Processing employee with ID: 2
+2024-04-15 10:39:07,332 INFO  EmployeeProcessor:16 - [] Processing employee with ID: 5
+2024-04-15 10:39:07,333 INFO  EmployeeProcessor:16 - [] Processing employee with ID: 7
+2024-04-15 10:39:07,582 INFO  AbstractStep:273 - [] Step: [step1] executed in 363ms
+2024-04-15 10:39:07,630 INFO  SimpleJobLauncher$1:152 - [] Job: [FlowJob: [name=import-employees]] completed with the following parameters: [{startAt=1713157746892}] and the following status: [COMPLETED] in 469ms
+2024-04-15 10:39:07,631 INFO  EmployeeController:37 - [] Data import job has completed successfully.
+2024-04-15 10:39:24,266 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159 - [] Application shutdown requested.
+2024-04-15 10:39:24,329 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2024-04-15 10:39:24,333 INFO  DirectJDKLog:173 - [] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-15 10:39:24,361 INFO  AbstractEntityManagerFactoryBean:651 - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-15 10:39:24,368 INFO  HikariDataSource:350 - [] HikariPool-1 - Shutdown initiated...
+2024-04-15 10:39:24,409 INFO  HikariDataSource:352 - [] HikariPool-1 - Shutdown completed.

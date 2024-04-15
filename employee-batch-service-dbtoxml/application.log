@@ -1,0 +1,29 @@
+2024-04-15 10:42:59,562 INFO  StartupInfoLogger:55 - [] Starting EmployeeBatchServiceDbtocsvApplication using Java 17.0.4.1 on LIN65001560 with PID 22036 (C:\Users\CHOPRASA\Documents\Assignments\employee-batch-service-dbtoxml\target\classes started by choprasa in C:\Users\CHOPRASA\Documents\Assignments\employee-batch-service-dbtoxml)
+2024-04-15 10:42:59,570 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2024-04-15 10:43:01,378 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-15 10:43:01,440 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2024-04-15 10:43:02,899 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8080 (http)
+2024-04-15 10:43:02,928 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2024-04-15 10:43:02,930 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.70]
+2024-04-15 10:43:03,292 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2024-04-15 10:43:03,294 INFO  ServletWebServerApplicationContext:292 - [] Root WebApplicationContext: initialization completed in 3565 ms
+2024-04-15 10:43:03,553 INFO  HikariDataSource:110 - [] HikariPool-1 - Starting...
+2024-04-15 10:43:04,440 INFO  HikariDataSource:123 - [] HikariPool-1 - Start completed.
+2024-04-15 10:43:04,891 INFO  LogHelper:31 - [] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-15 10:43:05,059 INFO  Version:44 - [] HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-04-15 10:43:05,657 INFO  JavaReflectionManager:56 - [] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-15 10:43:06,012 INFO  Dialect:175 - [] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-04-15 10:43:07,743 INFO  JtaPlatformInitiator:52 - [] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-15 10:43:07,778 INFO  AbstractEntityManagerFactoryBean:437 - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-15 10:43:08,227 WARN  JpaBaseConfiguration$JpaWebConfiguration:219 - [] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-15 10:43:09,096 WARN  JpaBatchConfigurer:63 - [] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2024-04-15 10:43:09,116 INFO  JobRepositoryFactoryBean:185 - [] No database type set, using meta data indicating: MYSQL
+2024-04-15 10:43:09,182 INFO  SimpleJobLauncher:215 - [] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-04-15 10:43:09,515 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-15 10:43:09,542 INFO  StartupInfoLogger:61 - [] Started EmployeeBatchServiceDbtocsvApplication in 11.112 seconds (JVM running for 13.857)
+2024-04-15 10:49:19,407 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159 - [] Application shutdown requested.
+2024-04-15 10:49:19,454 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2024-04-15 10:49:19,473 WARN  DisposableBeanAdapter:329 - [] Custom destroy method 'close' on bean with name 'writer' threw an exception: java.lang.NullPointerException: Cannot invoke "javax.xml.stream.XMLEventWriter.add(javax.xml.stream.events.XMLEvent)" because "this.delegateEventWriter" is null
+2024-04-15 10:49:19,475 INFO  AbstractEntityManagerFactoryBean:651 - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-15 10:49:19,479 INFO  HikariDataSource:350 - [] HikariPool-1 - Shutdown initiated...
+2024-04-15 10:49:19,501 INFO  HikariDataSource:352 - [] HikariPool-1 - Shutdown completed.

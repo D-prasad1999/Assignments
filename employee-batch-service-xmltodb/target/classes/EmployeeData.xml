@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <id>1</id>
+        <name>Ravi</name>
+        <salary>26000</salary>
+        <age>30</age>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Hari</name>
+        <salary>23000</salary>
+        <age>30</age>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Sai</name>
+        <salary>26000</salary>
+        <age>25</age>
+    </employee>
+</employees>
